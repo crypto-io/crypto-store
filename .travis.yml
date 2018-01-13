@@ -1,0 +1,21 @@
+dist: trusty
+language: node_js
+node_js:
+- '7'
+- '8'
+- '9'
+cache:
+  yarn: true
+before_script:
+- npm install -g backed-cli
+- npm install
+- backed -b
+deploy:
+  skip_cleanup: true
+  provider: npm
+  email: vandeurenglenn@gmail.com
+  api_key:
+    secure: ZwX1OxVrZDpuiGKC7LIoyzjCfSNUIBDnxkf83F4vIP0Vlo3qJj++KXPsoht7BHHcJidO/EHgxVH76mBb+fPjs3sKDKqhKoXl33Xg+gKVcLiteaeG+f8VYSzrj6reXGM0YyGVzjillwfCm6Tu/EABtDhmc1PBuuJCB11t2FxW8P17SSQwk/a9BUEmYfczV0L1mmEgoLEvP3IlEzXsUYYEST1xRgwjjHMSvySwsYE9P07WHO6tRtwvlUvNKSZSdUJYDjzz1HOiiH9odaYIjnhDtXgDxSEkj8BKv6nsIXnk7t+CHREkMzJa636b0puznsETB4AmvpqMoeO/X2yUEY9UfdYqyV4dYiMdOjPMTF9AH9lOPyVQLY8wN26o92BQn1yB02fInyfVBtPrZGrkNA4z002fNh9vXVEyA0t59V19x6IZCkXdC4gucYp08Q260snqfQ05RDhTC+CkLbl81qE/G9qNj01ItE2/4Tm5yvgk1lbINPQjksqMsakZ6aldtbaF+t+h/X3LBxA7wm1K4C2el2Z98SwJUeuC0JO33SOvwgJXn6utCJCyJZlotGrFWJpMDu03cPxeaEXwk0x+KjrQoScvxazawiCUbRhOVZ6PuqCy+c4YOgEiyIMuPsdX+jWFJ/2uiWuzKf2VOY3R28dRSqxYLHkeeGrgAOgDH7OHG94=
+  on:
+    tags: true
+    repo: crypto-io/crypto-store

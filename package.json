@@ -1,11 +1,14 @@
 {
   "name": "crypto-store",
-  "version": "0.1.0",
+  "version": "0.1.0-alpha",
   "main": "store.js",
   "repository": "https://github.com/crypto-io/crypto-store",
   "author": "Glenn Vandeuren <vandeurenglenn@gmail.com>",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "test": "node test.js"
+  },
   "backed": {
     "bundles": [
       {
