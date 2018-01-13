@@ -1,0 +1,21 @@
+{
+  "name": "crypto-store",
+  "version": "0.1.0",
+  "main": "store.js",
+  "repository": "https://github.com/crypto-io/crypto-store",
+  "author": "Glenn Vandeuren <vandeurenglenn@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "backed": {
+    "bundles": [
+      {
+        "src": "src/index.js",
+        "dest": "store.js",
+        "format": "cjs"
+      }
+    ]
+  },
+  "devDependencies": {
+    "tape": "^4.8.0"
+  }
+}
